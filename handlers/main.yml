@@ -1,0 +1,4 @@
+---
+# handlers file for openwrt-sqm
+- name: reload sqm
+  raw: /etc/init.d/sqm reload

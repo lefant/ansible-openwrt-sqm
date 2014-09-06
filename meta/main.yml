@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Fabian Linzberger
+  description: traffic shaping config of your openwrt based cerowrt system.
+  license: BSD
+  min_ansible_version: 1.7
+  platforms: []
+  # - Openwrt
+  #   versions:
+  #   - 14.07
+  categories:
+    - system
+    - network
+dependencies:
+  - { role: lefant.openwrt-uci }
