@@ -3,7 +3,7 @@
 - name: apply sqm uci settings
   uci: command=set key="sqm.{{ sqm.device }}.{{ item.key }}" value="{{ item.value }}"
   with_dict:
-    sqm.settings
+    "{{ sqm.settings }}"
   notify:
     - uci commit
     - reload sqm
